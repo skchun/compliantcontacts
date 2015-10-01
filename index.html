@@ -20,7 +20,38 @@
 
     <section class="main-content">
       <h1>
-<a id="compliantcontacts" class="anchor" href="#compliantcontacts" aria-hidden="true"><span class="octicon octicon-link"></span></a>compliantcontacts</h1>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h1>
+
+<p>Provides 4 functions for working with a contact list</p>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<p>Provide the following scripts in your html file:</p>
+
+<pre><code>&lt;script src="//philipmjohnson.github.io/ics314f15/morea/underscore/underscore-min.js"&gt;&lt;/script&gt;
+&lt;script src="contacts.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Here are example calls to the analytic functions</p>
+
+<pre><code>&lt;script&gt;
+  console.log(contactList.numContacts()); // print 4
+  console.log(contactList.findContact("Casanova")); //  print the henri Contact instance.
+  contactList.deleteContact("Philip", "Johnson"); //  delete philip's Contact instance.
+  console.log(contactList.listContacts()); //  string containing contacts in sorted order by last name.
+&lt;/script&gt;
+</code></pre>
+
+<p>Consult the contacts.js file for more details on these functions.</p>
+
+<h1>
+<a id="credits" class="anchor" href="#credits" aria-hidden="true"><span class="octicon octicon-link"></span></a>Credits</h1>
+
+<p>Uses the <a href="http://underscorejs.org">Underscore</a> library.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/skchun/compliantcontacts">Compliantcontacts</a> is maintained by <a href="https://github.com/skchun">skchun</a>.</span>
